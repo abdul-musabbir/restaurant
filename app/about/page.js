@@ -1,13 +1,14 @@
 import Image from "next/image";
+import Button from "../client/Button";
 import MainHeader from "../components/MainHeader";
 import cn from "../lib/cn";
-
+import SpecialSevice from "./abcomp/SpecialSevice";
 function page() {
   return (
-    <div>
+    <div className="flex flex-col w-full">
       <MainHeader />
 
-      <div className="w-full bg-[url('/image14.svg')] object-contain h-48 object-center flex items-center">
+      <div className="w-full bg-[url('/image14.svg')] object-contain h-48 object-center flex items-center bg-no-repeat">
         <div className="text-center w-full text-white">
           <div>
             <h2 className="font-bold text-2xl">About Us</h2>
@@ -92,8 +93,8 @@ function page() {
 
       <div className="w-full bg-pink">
         <div className="flex mx-auto w-11/12 py-8">
-          <div className="">
-            <div className="">
+          <div className="flex flex-col">
+            <div className="flex gap-2 flex-col">
               <span className="text-xl text-reds">TASTY AND CRUNCHY</span>
               <h2 className="text-2xl text-h font-bold">Our Chef</h2>
               <p className="">
@@ -104,7 +105,7 @@ function page() {
               </p>
             </div>
 
-            <div className="">
+            <div className="py-5">
               <Image
                 src={"/image_ourChef.png"}
                 width={100}
@@ -113,8 +114,15 @@ function page() {
                 className={cn("w-full")}
               />
             </div>
+
+            <div className="mt-5 mx-auto">
+              <Button name={"VIEW OUR ALL MANU"} className={"py-3 px-8"} />
+            </div>
           </div>
         </div>
+      </div>
+      <div className="flex mx-auto w-11/12">
+        <SpecialSevice />
       </div>
     </div>
   );

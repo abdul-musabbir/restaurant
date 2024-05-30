@@ -249,6 +249,7 @@ export function SpecialsManuForAllTime({ props }) {
     </div>
   );
 }
+
 // Review from our guests section
 export function TestimonialSlider() {
   return (
