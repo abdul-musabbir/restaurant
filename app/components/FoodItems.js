@@ -2,7 +2,7 @@ import { LogoSlider } from "../client/AllClientComponents";
 
 function FoodItems() {
   return (
-    <div className="py-10">
+    <div className="py-10 xl:py-20">
       <div className="flex mx-auto w-11/12 xl:w-[1200px]">
         <div className="w-full flex flex-col">
           <div className=" text-center w-full">

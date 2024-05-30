@@ -2,7 +2,7 @@ import { SpecialsManuForAllTime } from "../client/AllClientComponents";
 
 function SpecialsMenu() {
   return (
-    <div className="py-10">
+    <div className="py-10 xl:py-20">
       <div className="flex mx-auto w-11/12 xl:w-[1200px]">
         <div className="w-full">
           <div className="flex flex-col w-full gap-10">

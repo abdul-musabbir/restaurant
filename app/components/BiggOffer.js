@@ -2,7 +2,7 @@ import { LogoSlider } from "../client/AllClientComponents";
 
 function BigOffer() {
   return (
-    <div className="py-10">
+    <div className="py-10 xl:py-20">
       <div className="flex w-11/12 mx-auto xl:w-[1200px] ">
         <div className="w-full">
           <div className="flex flex-col">

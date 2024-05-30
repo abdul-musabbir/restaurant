@@ -6,7 +6,7 @@ import cn from "../lib/cn";
 
 function OurRestaurant() {
   return (
-    <div className="pb-10 xl:pb-20">
+    <div className="pb-10 xl:py-20">
       <div className="mx-auto flex w-11/12 xl:w-[1200px]">
         <div className="w-full">
           <div className="w-full mb-10">

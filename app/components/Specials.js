@@ -2,7 +2,7 @@ import { MenuCard } from "../client/AllClientComponents";
 
 function Specials() {
   return (
-    <div>
+    <div className="xl:py-20">
       <div className="flex mx-auto w-11/12 xl:w-[1200px]">
         <div className="w-full">
           <div>

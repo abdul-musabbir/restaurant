@@ -17,7 +17,7 @@ function Home() {
                   </span>
                 </div>
                 <div className="mt-2">
-                  <h1 className="uppercase flex flex-col text-[#2a435d] italic text-3xl font-bold sm:text-5xl">
+                  <h1 className="uppercase flex flex-col text-[#2a435d] italic text-3xl font-bold sm:text-5xl xl:text-[55px]">
                     <span>ENJOY OUR CHICKEN</span>
                     <p>
                       <span className="text-[#CC3333]"> BURGER </span> FAST FOOD

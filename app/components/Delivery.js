@@ -4,7 +4,7 @@ import cn from "../lib/cn";
 
 function Delivery() {
   return (
-    <div className="pb-10 lg:pb-20">
+    <div className="pb-10 lg:py-20">
       <div className="flex w-11/12 mx-auto xl:w-[1200px]">
         <div className="w-full flex flex-col gap-8 lg:flex-row">
           <div className="">

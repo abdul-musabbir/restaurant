@@ -9,7 +9,7 @@ export default function Header({ className }) {
         className
       )}
     >
-      <div className="mx-auto flex w-11/12">
+      <div className="mx-auto flex w-11/12 items-center">
         <div className="flex w-full justify-between items-center">
           <div>
             <Image

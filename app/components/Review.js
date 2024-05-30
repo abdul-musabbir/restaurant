@@ -2,7 +2,7 @@ import { TestimonialSlider } from "../client/AllClientComponents";
 
 function Review() {
   return (
-    <div className="pb-10">
+    <div className="pb-10 xl:py-20">
       <div className="flex mx-auto w-11/12 xl:w-[1200px]">
         <div className="w-full">
           <div>

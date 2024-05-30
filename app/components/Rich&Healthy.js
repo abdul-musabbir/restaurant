@@ -4,7 +4,7 @@ import Button from "../client/Button";
 
 function RichHealthy() {
   return (
-    <div>
+    <div className="xl:py-20">
       <div className="mx-auto flex w-11/12 xl:w-[1200px]">
         <div>
           <div>

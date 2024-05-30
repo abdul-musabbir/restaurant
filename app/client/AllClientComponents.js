@@ -16,12 +16,12 @@ export function DropDownMenu() {
 
       <div
         className={
-          "absolute bg-[#fff8ee] left-0 w-full top-44 text-center py-10 shadow-xl hidden md:block md:static md:bg-transparent md:shadow-none md:p-0" +
+          "absolute bg-[#fff8ee] left-0 w-full top-44 text-center py-10 shadow-xl hidden md:block md:static md:bg-transparent md:shadow-none md:p-0 items-center" +
           (drop ? "block" : "")
         }
       >
-        <div className="">
-          <ul className="flex flex-col gap-8 md:flex-row">
+        <div className="flex items-center">
+          <ul className="flex flex-col gap-8 md:flex-row xl:items-center">
             <li>
               <Link href={"/"} className="uppercase  font-bold text-lg">
                 home
@@ -47,7 +47,27 @@ export function DropDownMenu() {
                 contact
               </Link>
             </li>
-
+            <div className="hidden xl:block ">
+              <div className="flex items-center gap-3">
+                <div className={cn("flex flex-col")}>
+                  <span className="font-bold text-h leading-3 xl:text-lg">
+                    Delivery Order
+                  </span>
+                  <p className="text-h text-sm font-medium xl:text-base leading-3">
+                    +880 123 456 789
+                  </p>
+                </div>
+                <div>
+                  <Image
+                    src={"/delivery.svg"}
+                    width={200}
+                    height={200}
+                    alt="delivery"
+                    className="w-8 xl:w-10"
+                  />
+                </div>
+              </div>
+            </div>
             <li>
               <Link
                 href={"/login"}
@@ -208,7 +228,7 @@ export function SpecialsManuForAllTime({ props }) {
           <div key={index} onClick={() => setMenu(index)}>
             <div
               className={cn(
-                "flex items-center flex-col size-44 rounded-lg justify-center gap-2 text-center py-2 transition-all duration-300",
+                "flex items-center flex-col size-44 rounded-lg justify-center gap-2 text-center py-2 transition-all duration-300 cursor-pointer",
                 {
                   "bg-reds text-white": menu === index,
                 }

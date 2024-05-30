@@ -4,7 +4,7 @@ import cn from "../lib/cn";
 
 function TheBest() {
   return (
-    <div className="pb-10 lg:pb-20">
+    <div className="pb-10 lg:py-20">
       <div className="flex mx-auto w-11/12 xl:w-[1200px]">
         <div className="w-full">
           <div className="">
