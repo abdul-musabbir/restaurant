@@ -1,11 +1,16 @@
 "use client";
-
 import { Menu, Star, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
+import "swiper/css";
+import "swiper/css/pagination";
+import { Autoplay, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import CheckOutMenu from "../components/CheckOutMenu";
+import cn from "../lib/cn";
 export function DropDownMenu() {
-  const [drop, setDrop] = useState(false);
+  const [drop, setDrop] = useState(true);
   return (
     <div>
       <div>
@@ -15,12 +20,14 @@ export function DropDownMenu() {
       </div>
 
       <div
-        className={
-          "absolute bg-[#fff8ee] left-0 w-full top-44 text-center py-10 shadow-xl hidden md:block md:static md:bg-transparent md:shadow-none md:p-0 items-center" +
-          (drop ? "block" : "")
-        }
+        className={cn(
+          "absolute bg-[#fff8ee] left-0 flex w-full top-44 text-center py-10 shadow-xl hidden md:block md:static md:bg-transparent md:shadow-none md:p-0 items-center",
+          {
+            " block ": drop,
+          }
+        )}
       >
-        <div className="flex items-center">
+        <div className="flex items-center w-full">
           <ul className="flex flex-col gap-8 md:flex-row xl:items-center">
             <li>
               <Link href={"/"} className="uppercase  font-bold text-lg">
@@ -83,13 +90,6 @@ export function DropDownMenu() {
   );
 }
 
-import Image from "next/image";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Autoplay, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import CheckOutMenu from "../components/CheckOutMenu";
-import cn from "../lib/cn";
 export function LogoSlider({ params }) {
   return (
     <>
