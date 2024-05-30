@@ -27,7 +27,7 @@ export function DropDownMenu() {
           }
         )}
       >
-        <div className="flex items-center w-full">
+        <div className="flex items-center w-full justify-center">
           <ul className="flex flex-col gap-8 md:flex-row xl:items-center">
             <li>
               <Link href={"/"} className="uppercase  font-bold text-lg">
