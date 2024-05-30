@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         reds: "#CC3333",
         h: "#2a435d",
+        pink: "#FFDFDF",
       },
       gridColumn: {
         "span-4-to-end": "4 / -1",
