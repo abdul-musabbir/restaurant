@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import CheckOutMenu from "../components/CheckOutMenu";
 import cn from "../lib/cn";
 export function DropDownMenu() {
-  const [drop, setDrop] = useState(true);
+  const [drop, setDrop] = useState(false);
   return (
     <div>
       <div>
