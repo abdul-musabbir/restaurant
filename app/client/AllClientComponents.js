@@ -28,22 +28,22 @@ export function DropDownMenu() {
               </Link>
             </li>
             <li>
-              <Link href={"/"} className="uppercase  font-bold text-lg">
+              <Link href={"/about"} className="uppercase  font-bold text-lg">
                 about
               </Link>
             </li>
             <li>
-              <Link href={"/"} className="uppercase  font-bold text-lg">
+              <Link href={"/items"} className="uppercase  font-bold text-lg">
                 items
               </Link>
             </li>
             <li>
-              <Link href={"/"} className="uppercase  font-bold text-lg">
+              <Link href={"/pages"} className="uppercase  font-bold text-lg">
                 pages
               </Link>
             </li>
             <li>
-              <Link href={"/"} className="uppercase  font-bold text-lg">
+              <Link href={"/contact"} className="uppercase  font-bold text-lg">
                 contact
               </Link>
             </li>
