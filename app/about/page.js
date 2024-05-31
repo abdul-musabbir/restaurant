@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Button from "../client/Button";
+import Footer from "../components/Footer";
 import MainHeader from "../components/MainHeader";
+import OurBranch from "../components/OurBranch";
 import cn from "../lib/cn";
+import OurTeam from "./abcomp/OurTeam";
 import SpecialSevice from "./abcomp/SpecialSevice";
 function page() {
   return (
@@ -121,9 +124,20 @@ function page() {
           </div>
         </div>
       </div>
-      <div className="flex mx-auto w-11/12">
-        <SpecialSevice />
+
+      <div className="flex mx-auto w-11/12 mt-10">
+        <div className="w-full">
+          <div>
+            <div>
+              <SpecialSevice />
+            </div>
+          </div>
+        </div>
       </div>
+
+      <OurTeam />
+      <OurBranch />
+      <Footer />
     </div>
   );
 }

@@ -1,6 +1,4 @@
 "use client";
-import { Star } from "lucide-react";
-import Image from "next/image";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
@@ -41,28 +39,11 @@ export default function Slider() {
           return (
             <SwiperSlide key={index}>
               <div className="flex flex-col items-center px-4 py-10 bg-transparent gap-5 cursor-pointer">
-                <div className="size-20 flex items-start justify-center overflow-hidden bg-reds border-reds border-4 rounded-full">
-                  <Image
-                    src={`${res.url}.avif`}
-                    width={100}
-                    height={100}
-                    alt="logo slider"
-                    priority={index === 0}
-                  />
-                </div>
-                <div>
-                  <h3 className="font-bold text-2xl">{res?.name}</h3>
-                  <p className=" line-clamp-3 xl:text-h">{res?.des}</p>
-                </div>
-
-                <div className="w-full flex justify-end">
-                  <div className="flex items-center">
-                    <Star fill="#CC3333" strokeWidth={0} />
-                    <Star fill="#CC3333" strokeWidth={0} />
-                    <Star fill="#CC3333" strokeWidth={0} />
-                    <Star fill="#CC3333" strokeWidth={0} />
-                    <Star color="#cc3333" size={20} />
-                  </div>
+                <div className="flex flex-col gap-5">
+                  <h3 className="font-bold text-2xl text-reds">{res?.name}</h3>
+                  <p className=" line-clamp-3 xl:text-h opacity-80">
+                    {res?.des}
+                  </p>
                 </div>
               </div>
             </SwiperSlide>
@@ -75,33 +56,35 @@ export default function Slider() {
 
 let logoSlideList = [
   {
-    url: "/R",
-    name: "Robert M. Bixon",
-    des: "Also very good and so was the service. I had the mushroom risotto with scallops which was awesome My wife had a burger over greens",
+    name: "Birthday Party",
+    des: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
   },
   {
-    url: "/R",
-    name: "Bernadette R. Martin",
-    des: "Also very good and so was the service. I had the mushroom risotto with scallops which was awesome My wife had a burger over greens",
+    name: "Wedding Party",
+    des: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
   },
   {
-    url: "/R",
-    name: "Regina D. Leonard",
-    des: "Also very good and so was the service. I had the mushroom risotto with scallops which was awesome My wife had a burger over greens",
+    name: "Birthday Party",
+    des: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
   },
   {
-    url: "/R",
-    name: "Robert M. Bixon",
-    des: "Also very good and so was the service. I had the mushroom risotto with scallops which was awesome My wife had a burger over greens",
+    name: "Wedding Party",
+    des: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
   },
   {
-    url: "/R",
-    name: "Bernadette R. Martin",
-    des: "Also very good and so was the service. I had the mushroom risotto with scallops which was awesome My wife had a burger over greens",
+    name: "Birthday Party",
+    des: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
   },
   {
-    url: "/R",
-    name: "Regina D. Leonard",
-    des: "Also very good and so was the service. I had the mushroom risotto with scallops which was awesome My wife had a burger over greens",
+    name: "Wedding Party",
+    des: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+  },
+  {
+    name: "Birthday Party",
+    des: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+  },
+  {
+    name: "Wedding Party",
+    des: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
   },
 ];
