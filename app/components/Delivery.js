@@ -34,7 +34,7 @@ function Delivery() {
                 <div className="flex gap-8 xl:items-center items-center">
                   <div className="flex items-center gap-3">
                     <div className={cn("flex flex-col")}>
-                      <span className="font-bold text-h leading-3 xl:text-lg">
+                      <span className="font-bold text-h xl:text-lg">
                         Delivery Order
                       </span>
                       <p className="text-h text-sm font-medium xl:text-base leading-3">
