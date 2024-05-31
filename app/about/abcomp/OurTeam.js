@@ -4,23 +4,27 @@ import Image from "next/image";
 import Link from "next/link";
 export default function OurTeam() {
   return (
-    <div className="py-10">
-      <div className="flex mx-auto w-11/12">
+    <div className="py-10 xl:py-20">
+      <div className="flex mx-auto w-11/12 xl:w-[1200px]">
         <div className="w-full">
           <div className="text-center">
-            <h2 className="font-bold text-2xl uppercase">our team</h2>
-            <p className="text-h">The Hardworking Team behind the restaurant</p>
+            <h2 className="font-bold text-2xl uppercase xl:text-3xl text-h">
+              our team
+            </h2>
+            <p className="text-h xl:text-lg">
+              The Hardworking Team behind the restaurant
+            </p>
           </div>
-          <div className="mt-16 flex flex-col gap-28">
+          <div className="mt-16 xl:mt-20 flex flex-col gap-28 xl:flex-row xl:flex-wrap xl:items-center xl:justify-center">
             {team.map((items, index) => (
               <div key={index}>
-                <div className=" relative border-4 border-reds rounded-full size-96 flex items-center justify-center px-8">
+                <div className=" relative border-4 border-reds rounded-full size-96 flex items-center justify-center px-8 xl:size-80">
                   <div className=" absolute -top-10 right-0">
                     <Image
                       src={"/R.avif"}
                       width={100}
                       height={100}
-                      className="size-40 object-cover object-center rounded-full border-4 border-reds"
+                      className="size-40 object-cover object-center rounded-full border-4 border-reds xl:size-32"
                     />
                   </div>
                   <div className="text-center">

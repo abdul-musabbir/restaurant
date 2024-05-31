@@ -10,7 +10,7 @@ export default function Header({ className }) {
         className
       )}
     >
-      <div className="mx-auto flex w-11/12 items-center">
+      <div className="mx-auto flex w-11/12 items-center xl:w-[1250px] 2xl:w-[1400px]">
         <div className="flex w-full justify-between items-center">
           <Link href={"/"}>
             <Image

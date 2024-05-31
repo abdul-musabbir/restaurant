@@ -7,7 +7,7 @@ function SpecialsMenu() {
         <div className="w-full">
           <div className="flex flex-col w-full gap-10">
             <div className="w-full flex items-center justify-center">
-              <h2 className=" text-reds font-bold text-xl text-center">
+              <h2 className=" text-reds font-bold text-xl text-center xl:text-3xl">
                 SPECIALS MANU FOR ALL TIME
               </h2>
             </div>

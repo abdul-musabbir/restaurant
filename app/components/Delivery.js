@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Button from "../client/Button";
 import cn from "../lib/cn";
 
@@ -42,7 +41,7 @@ function Delivery() {
                       </p>
                     </div>
                     <div>
-                      <Image
+                      <img
                         src={"/delivery.svg"}
                         width={200}
                         height={200}
@@ -66,7 +65,7 @@ function Delivery() {
           </div>
 
           <div className="w-full">
-            <Image
+            <img
               src={"/image_delivery.png"}
               width={100}
               height={100}

@@ -120,7 +120,7 @@ export function LogoSlider({ params }) {
         {params.map((res, index) => {
           return (
             <SwiperSlide key={index}>
-              <Image
+              <img
                 src={res.url}
                 width={200}
                 height={200}
@@ -234,7 +234,7 @@ export function SpecialsManuForAllTime({ props }) {
                 }
               )}
             >
-              <Image
+              <img
                 src={items.url}
                 alt="SPECIALS MANU FOR ALL TIME"
                 width={140}
@@ -286,7 +286,7 @@ export function TestimonialSlider() {
             <SwiperSlide key={index}>
               <div className="flex flex-col items-center px-4 py-10 bg-transparent gap-5 cursor-pointer">
                 <div className="size-20 flex items-start justify-center overflow-hidden bg-reds border-reds border-4 rounded-full">
-                  <Image
+                  <img
                     src={`${res.url}.avif`}
                     width={100}
                     height={100}

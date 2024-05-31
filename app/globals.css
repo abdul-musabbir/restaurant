@@ -56,3 +56,12 @@ html {
 .context {
   grid-column: 4/-1;
 }
+
+/* about page background image */
+.about-bg-image {
+  width: 100%;
+  height: 15rem;
+  background-image: url("../public/image14.svg");
+  /* background-position: center; */
+  background-size: cover;
+}

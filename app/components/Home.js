@@ -1,5 +1,4 @@
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import Button from "../client/Button";
 
@@ -27,7 +26,7 @@ function Home() {
               </div>
 
               <div className="w-full flex items-center justify-center py-10 xl:hidden">
-                <Image
+                <img
                   src={"/image1.png"}
                   width={350}
                   height={200}
@@ -50,7 +49,7 @@ function Home() {
             </div>
 
             <div className="w-full flex items-center justify-center py-10 xl:block hidden xl:col-span-5">
-              <Image
+              <img
                 src={"/image1.png"}
                 width={350}
                 height={200}

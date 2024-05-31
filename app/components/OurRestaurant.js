@@ -25,7 +25,7 @@ function OurRestaurant() {
                 <div className="flex flex-col gap-2">
                   <div className="grid grid-cols-2 w-full gap-2">
                     <div>
-                      <Image
+                      <img
                         src={"/image9.png"}
                         width={400}
                         height={200}
@@ -33,7 +33,7 @@ function OurRestaurant() {
                       />
                     </div>
                     <div>
-                      <Image
+                      <img
                         src={"/image10.png"}
                         width={200}
                         height={200}
@@ -44,7 +44,7 @@ function OurRestaurant() {
                   </div>
 
                   <div className="w-full">
-                    <Image
+                    <img
                       src={"/image11.png"}
                       width={200}
                       height={200}

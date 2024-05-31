@@ -24,11 +24,11 @@ function OurBranch() {
                         <p className="font-bold text-lg">{res.des}</p>
                       </div>
                       <div className="flex gap-4">
-                        <span className="flex">
+                        <span className="flex gap-2">
                           <Clock />
                           {res.time}
                         </span>
-                        <span className="flex">
+                        <span className="flex gap-2">
                           <Phone />
                           {res.number}
                         </span>

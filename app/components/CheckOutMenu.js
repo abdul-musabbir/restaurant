@@ -1,5 +1,4 @@
 import { CircleArrowRight } from "lucide-react";
-import Image from "next/image";
 import Button from "../client/Button";
 
 function CheckOutMenu() {
@@ -10,7 +9,7 @@ function CheckOutMenu() {
           <div className="grid gap-8 xl:grid-cols-2">
             <div className="flex flex-col items-center">
               <div className="w-full md:w-fit">
-                <Image
+                <img
                   src="/image8.png"
                   width={200}
                   height={200}

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function TopHeader() {
   return (
-    <div className=" bg-red-800 w-full py-4">
+    <div className=" bg-reds w-full py-4">
       <div className="flex mx-auto w-11/12">
         <div className="w-full flex justify-between items-center text-white">
           <div className="flex flex-col gap-2 sm:flex-row sm:gap-5">

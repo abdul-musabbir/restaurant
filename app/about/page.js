@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Button from "../client/Button";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -13,26 +12,27 @@ function page() {
       <MainHeader />
       <Header />
 
-      <div className="w-full bg-[url('/image14.svg')] object-contain h-48 object-center flex items-center bg-no-repeat">
+      <div className="flex items-center bg-no-repeat bg-reds w-full h-60 bg-cover bg-center bg-[url('/image14.svg')]">
         <div className="text-center w-full text-white">
           <div>
-            <h2 className="font-bold text-2xl">About Us</h2>
-            <p>Read our Story, How we started and about the Team</p>
+            <h2 className="font-bold text-2xl xl:text-5xl">About Us</h2>
+            <p className=" xl:text-xl xl:mt-2">
+              Read our Story, How we started and about the Team
+            </p>
           </div>
         </div>
       </div>
-      <div className="mx-auto flex w-11/12 py-10">
+
+      <div className="mx-auto flex w-11/12 py-10 xl:w-[1200px]">
         <div className="">
           <div className="">
             <div className="border-reds border-4 rounded-2xl">
-              <div className="py-8 px-5 flex flex-col gap-5">
+              <div className="py-8 px-5 flex flex-col gap-5 xl:grid xl:grid-cols-2">
                 <div className="">
-                  <Image
-                    src={"/image15.jpg"}
-                    width={100}
-                    height={100}
+                  <img
+                    src="https://raw.githubusercontent.com/abdul-musabbir/cloud/master/image_about_1%20(2)%20(1).jpg"
                     alt="image"
-                    className="w-full"
+                    className="w-full xl:h-64 xl:object-cover xl:object-center rounded-2xl"
                   />
                 </div>
 
@@ -55,18 +55,18 @@ function page() {
               </div>
             </div>
 
-            <div className="mt-8">
+            <div className="mt-8 xl:py-20">
               <div className="">
                 <div className="">
-                  <h2 className="text-center font-bold uppercase text-reds text-2xl">
+                  <h2 className="text-center font-bold uppercase text-reds text-2xl xl:text-4xl">
                     our story
                   </h2>
                 </div>
 
                 <div className="mt-8">
-                  <div className="flex flex-col gap-5">
-                    <div className="order-2">
-                      <p className="text-h font-medium">
+                  <div className="flex flex-col gap-5 xl:grid xl:grid-cols-2">
+                    <div className="order-2 xl:order-1">
+                      <p className="text-h font-medium xl:text-xl opacity-80">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s,
@@ -79,13 +79,11 @@ function page() {
                       </p>
                     </div>
 
-                    <div className="w-full order-1">
-                      <Image
+                    <div className="w-full order-1 xl:order-2">
+                      <img
                         src={"/image16.jpg"}
-                        width={100}
-                        height={100}
                         alt="image"
-                        className="w-full"
+                        className="w-full xl:rounded-xl"
                       />
                     </div>
                   </div>
@@ -96,13 +94,17 @@ function page() {
         </div>
       </div>
 
-      <div className="w-full bg-pink">
-        <div className="flex mx-auto w-11/12 py-8">
-          <div className="flex flex-col">
-            <div className="flex gap-2 flex-col">
-              <span className="text-xl text-reds">TASTY AND CRUNCHY</span>
-              <h2 className="text-2xl text-h font-bold">Our Chef</h2>
-              <p className="">
+      <div className="w-full bg-pink xl:my-20">
+        <div className="flex mx-auto w-11/12 py-8 xl:p-0 xl:w-[1200px]">
+          <div className="flex flex-col xl:grid xl:grid-cols-2 relative xl:w-full">
+            <div className="flex gap-2 flex-col xl:py-4">
+              <span className="text-xl text-reds uppercase xl:text-2xl">
+                TASTY AND CRUNCHY
+              </span>
+              <h2 className="text-2xl text-h font-bold xl:text-4xl">
+                Our Chef
+              </h2>
+              <p className="xl:text-xl text-h xl:opacity-80">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incidition ullamco laboris nisi ut aliquip ex ea
                 commodo condor consectetur adipiscing elit, sed do eiusmod
@@ -110,24 +112,24 @@ function page() {
               </p>
             </div>
 
-            <div className="py-5">
-              <Image
+            <div className="py-5 xl:flex xl:items-end xl:p-0 xl:justify-center bottom-0">
+              <img
                 src={"/image_ourChef.png"}
                 width={100}
                 height={100}
                 alt="image"
-                className={cn("w-full")}
+                className={cn("w-full xl:w-96")}
               />
             </div>
 
-            <div className="mt-5 mx-auto">
+            <div className="mt-5 mx-auto xl:absolute xl:left-60 xl:bottom-10">
               <Button name={"VIEW OUR ALL MANU"} className={"py-3 px-8"} />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="flex mx-auto w-11/12 mt-10">
+      <div className="flex mx-auto w-11/12 mt-10 xl:py-20 xl:w-[1200px]">
         <div className="w-full">
           <div>
             <div>
