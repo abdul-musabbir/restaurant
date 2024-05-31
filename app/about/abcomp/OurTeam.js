@@ -15,16 +15,16 @@ export default function OurTeam() {
               The Hardworking Team behind the restaurant
             </p>
           </div>
-          <div className="mt-16 xl:mt-20 flex flex-col gap-28 xl:flex-row xl:flex-wrap xl:items-center xl:justify-center">
+          <div className="mt-20 xl:mt-20 flex flex-col gap-28 xl:flex-row xl:flex-wrap xl:items-center xl:justify-center items-center">
             {team.map((items, index) => (
               <div key={index}>
-                <div className=" relative border-4 border-reds rounded-full size-96 flex items-center justify-center px-8 xl:size-80">
-                  <div className=" absolute -top-10 right-0">
+                <div className=" relative border-4 border-reds rounded-full size-80 flex items-center justify-center px-8 xl:size-80">
+                  <div className=" absolute -top-14 right-0">
                     <Image
                       src={"/R.avif"}
                       width={100}
                       height={100}
-                      className="size-40 object-cover object-center rounded-full border-4 border-reds xl:size-32"
+                      className="size-36 object-cover object-center rounded-full border-4 border-reds xl:size-32"
                     />
                   </div>
                   <div className="text-center">
