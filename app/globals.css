@@ -6,8 +6,12 @@
 
 body {
   background-color: #fff8ee;
+  scroll-behavior: smooth;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /* slider */
 
 .slider {

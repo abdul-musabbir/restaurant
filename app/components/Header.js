@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { DropDownMenu } from "../client/AllClientComponents";
 import cn from "../lib/cn";
 export default function Header({ className }) {
@@ -11,7 +12,7 @@ export default function Header({ className }) {
     >
       <div className="mx-auto flex w-11/12 items-center">
         <div className="flex w-full justify-between items-center">
-          <div>
+          <Link href={"/"}>
             <Image
               src={"/logo.png"}
               className="md:w-20"
@@ -19,7 +20,7 @@ export default function Header({ className }) {
               height={80}
               alt="logo"
             />
-          </div>
+          </Link>
 
           <DropDownMenu />
         </div>
