@@ -9,7 +9,7 @@ function CheckOutMenu() {
         <div>
           <div className="grid gap-8 xl:grid-cols-2">
             <div className="flex flex-col items-center">
-              <div>
+              <div className="w-full md:w-fit">
                 <Image
                   src="/image8.png"
                   width={200}
