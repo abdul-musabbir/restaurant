@@ -21,7 +21,7 @@ export function DropDownMenu() {
 
       <div
         className={cn(
-          "absolute bg-[#fff8ee] left-0 flex w-full top-44 text-center py-10 shadow-xl hidden md:block md:static md:bg-transparent md:shadow-none md:p-0 items-center",
+          "absolute bg-[#fff8ee] left-0 flex w-full top-24 text-center py-10 shadow-xl hidden md:block md:static md:bg-transparent md:shadow-none md:p-0 items-center",
           {
             " block ": drop,
           }
