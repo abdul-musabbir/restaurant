@@ -2,6 +2,7 @@ import BigOffer from "./components/BiggOffer";
 import Delivery from "./components/Delivery";
 import FoodItems from "./components/FoodItems";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 import Home from "./components/Home";
 import MainHeader from "./components/MainHeader";
 import OurBranch from "./components/OurBranch";
@@ -15,6 +16,7 @@ export default function page() {
   return (
     <main>
       <MainHeader />
+      <Header />
       <Home />
       <FoodItems />
       <RichHealthy />

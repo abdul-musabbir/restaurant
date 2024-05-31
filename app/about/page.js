@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "../client/Button";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 import MainHeader from "../components/MainHeader";
 import OurBranch from "../components/OurBranch";
 import cn from "../lib/cn";
@@ -10,6 +11,7 @@ function page() {
   return (
     <div className="flex flex-col w-full">
       <MainHeader />
+      <Header />
 
       <div className="w-full bg-[url('/image14.svg')] object-contain h-48 object-center flex items-center bg-no-repeat">
         <div className="text-center w-full text-white">

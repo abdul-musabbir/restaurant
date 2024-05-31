@@ -5,7 +5,7 @@ export default function Header({ className }) {
   return (
     <div
       className={cn(
-        "flex items-center h-20 md:h-24 bg-[#fff8ee] border-b shadow-xl",
+        "flex items-center h-20 md:h-24 bg-[#fff8ee] border-b shadow-xl sticky top-0 left-0 right-0 z-50",
         className
       )}
     >
