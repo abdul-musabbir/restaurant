@@ -47,7 +47,7 @@ export default function page() {
         </div>
       </div>
 
-      <div className="w-11/12 flex mx-auto lg:w-[1010px] xl:w-[1200px] py-10">
+      <div className="w-11/12 flex mx-auto lg:w-[1010px] xl:w-[950px] py-10">
         <div>
           <div>
             <div className="flex flex-col gap-5 md:grid md:grid-cols-2">
@@ -62,13 +62,17 @@ export default function page() {
                           index === 5 || index === 8,
                       },
                       {
-                        " md:row-start-1 md:row-end-4 md:col-start-2":
+                        " md:row-start-1 md:col-start-2 md:col-end-3 xl:row-end-4 ":
                           index === 5,
-                        " md:col-span-2": index === 8,
+                        " md:col-span-2 xl:row-start-6": index === 8,
                       }
                     )}
                   >
-                    <div className="flex justify-between h-full">
+                    <div
+                      className={cn("flex justify-between h-full", {
+                        " static justify-normal": index === 5,
+                      })}
+                    >
                       {items?.name && items.des && items.price && (
                         <div
                           className={cn(
@@ -91,15 +95,9 @@ export default function page() {
 
                       {items.url && (
                         <div
-                          className={cn(
-                            "",
-                            {
-                              " w-full h-full ": index === 5 || index === 8,
-                            },
-                            {
-                              " col-span-1": index === 5,
-                            }
-                          )}
+                          className={cn("", {
+                            " w-full h-full ": index === 5 || index === 8,
+                          })}
                         >
                           <img
                             src={items.url}
