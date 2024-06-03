@@ -13,6 +13,9 @@ module.exports = {
         pink: "#FFDFDF",
         grays: "#fff8ee",
       },
+      boxShadow: {
+        box: "0px 0px 10px #8f8181",
+      },
       gridColumn: {
         "span-4-to-end": "4 / -1",
       },

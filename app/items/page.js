@@ -1,5 +1,8 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import MainHeader from "../components/MainHeader";
+import OurBranch from "../components/OurBranch";
+import cn from "../lib/cn";
 
 export default function page() {
   return (
@@ -15,7 +18,7 @@ export default function page() {
         </p>
       </div>
 
-      <div className="flex mx-auto w-11/12 py-10">
+      <div className="flex mx-auto w-11/12 py-10 xl:w-[1200px]">
         <div className="w-full">
           <div className="flex flex-col items-center justify-center gap-5">
             <div>
@@ -44,22 +47,73 @@ export default function page() {
         </div>
       </div>
 
-      <div className="w-11/12 flex mx-auto">
+      <div className="w-11/12 flex mx-auto lg:w-[1010px] xl:w-[1200px] py-10">
         <div>
           <div>
-            <div>
+            <div className="flex flex-col gap-5 md:grid md:grid-cols-2">
               {items.map((items, index) => {
                 return (
-                  <div key={index}>
-                    <div>
-                      <div>
-                        <h3>{items?.name}</h3>
-                        <p>{items?.des}</p>
-                        <span>From ${items?.price}</span>
-                      </div>
-                      <div>
-                        <img src={items.url} alt="image" />
-                      </div>
+                  <div
+                    key={index}
+                    className={cn(
+                      "rounded-2xl pl-3 p-2 h-32 shadow-box",
+                      {
+                        " shadow-none p-0 rounded-none h-full":
+                          index === 5 || index === 8,
+                      },
+                      {
+                        " md:row-start-1 md:row-end-4 md:col-start-2":
+                          index === 5,
+                        " md:col-span-2": index === 8,
+                      }
+                    )}
+                  >
+                    <div className="flex justify-between h-full">
+                      {items?.name && items.des && items.price && (
+                        <div
+                          className={cn(
+                            "w-full pr-3 py-3 flex flex-col justify-between",
+                            {
+                              " hidden ":
+                                !items?.name || !items.des || !items.price,
+                            }
+                          )}
+                        >
+                          <h3 className="font-bold">{items?.name}</h3>
+                          <p className="line-clamp-2 text-h text-sm">
+                            {items?.des}
+                          </p>
+                          <span className=" font-medium text-h">
+                            From ${items?.price}
+                          </span>
+                        </div>
+                      )}
+
+                      {items.url && (
+                        <div
+                          className={cn(
+                            "",
+                            {
+                              " w-full h-full ": index === 5 || index === 8,
+                            },
+                            {
+                              " col-span-1": index === 5,
+                            }
+                          )}
+                        >
+                          <img
+                            src={items.url}
+                            alt="image"
+                            className={cn(
+                              "w-48 h-full rounded-2xl object-cover object-center",
+                              {
+                                " w-full rounded-none":
+                                  index === 5 || index === 8,
+                              }
+                            )}
+                          />
+                        </div>
+                      )}
                     </div>
                   </div>
                 );
@@ -68,6 +122,9 @@ export default function page() {
           </div>
         </div>
       </div>
+
+      <OurBranch />
+      <Footer />
     </div>
   );
 }
@@ -77,30 +134,96 @@ const items = [
     name: "Chicken Supreme Pizza",
     des: "Topped with chicken, onion, capsicum, black olive & Green chilli",
     price: 150,
-    url: "/",
+    url: "/image11.png",
   },
   {
     name: "Hamburger Burger with Beef",
     des: "Topped with chicken, onion, capsicum, black olive & Green chilli",
     price: 150,
-    url: "/",
+    url: "/image11.png",
   },
   {
     name: "Belgium waffles with strawberries",
     des: "Topped with chicken, onion, capsicum, black olive & Green chilli",
     price: 150,
-    url: "/",
+    url: "/image11.png",
   },
   {
     name: "Chicken skewers",
     des: "Topped with chicken, onion, capsicum, black olive & Green chilli",
     price: 150,
-    url: "/",
+    url: "/image11.png",
   },
   {
     name: "Delicious food on a white plate",
     des: "Topped with chicken, onion, capsicum, black olive & Green chilli",
     price: 150,
-    url: "/",
+    url: "/image11.png",
+  },
+  {
+    url: "/image_itemsList_ooffer.jpg",
+  },
+  {
+    name: "Delicious food on a white plate",
+    des: "Topped with chicken, onion, capsicum, black olive & Green chilli",
+    price: 150,
+    url: "/image11.png",
+  },
+  {
+    name: "Delicious food on a white plate",
+    des: "Topped with chicken, onion, capsicum, black olive & Green chilli",
+    price: 150,
+    url: "/image11.png",
+  },
+  {
+    url: "/image_itemsList_ooffer_2.jpg",
+  },
+  {
+    name: "Delicious food on a white plate",
+    des: "Topped with chicken, onion, capsicum, black olive & Green chilli",
+    price: 150,
+    url: "/image11.png",
+  },
+  {
+    name: "Delicious food on a white plate",
+    des: "Topped with chicken, onion, capsicum, black olive & Green chilli",
+    price: 150,
+    url: "/image11.png",
+  },
+  {
+    name: "Delicious food on a white plate",
+    des: "Topped with chicken, onion, capsicum, black olive & Green chilli",
+    price: 150,
+    url: "/image11.png",
+  },
+  {
+    name: "Delicious food on a white plate",
+    des: "Topped with chicken, onion, capsicum, black olive & Green chilli",
+    price: 150,
+    url: "/image11.png",
+  },
+  {
+    name: "Delicious food on a white plate",
+    des: "Topped with chicken, onion, capsicum, black olive & Green chilli",
+    price: 150,
+    url: "/image11.png",
+  },
+  {
+    name: "Delicious food on a white plate",
+    des: "Topped with chicken, onion, capsicum, black olive & Green chilli",
+    price: 150,
+    url: "/image11.png",
+  },
+  {
+    name: "Delicious food on a white plate",
+    des: "Topped with chicken, onion, capsicum, black olive & Green chilli",
+    price: 150,
+    url: "/image11.png",
+  },
+  {
+    name: "Delicious food on a white plate",
+    des: "Topped with chicken, onion, capsicum, black olive & Green chilli",
+    price: 150,
+    url: "/image11.png",
   },
 ];

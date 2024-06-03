@@ -65,3 +65,8 @@ html {
   /* background-position: center; */
   background-size: cover;
 }
+
+/* .grids {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+} */
